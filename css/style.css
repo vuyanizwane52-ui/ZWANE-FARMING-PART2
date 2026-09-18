@@ -997,4 +997,189 @@ textarea:focus-visible {
     .main-nav {
         order: 3;
         width: 100%;
-        justify-content: flex-start;
+        justify-content: flex-start;        flex-wrap: wrap;
+        padding-top: 0.65rem;
+        border-top: 2px solid var(--line);
+    }
+
+    .header-actions {
+        margin-left: auto;
+    }
+
+    .nav-cta {
+        display: inline-flex;
+    }
+
+    .intro-grid,
+    .two-col,
+    .feature,
+    .sustain-inner,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-reverse img,
+    .feature-reverse .feature-content {
+        order: initial;
+    }
+
+    .card-grid,
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item.large {
+        grid-row: auto;
+        min-height: 20rem;
+    }
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINT 2
+   MOBILE
+   ========================= */
+@media (max-width: 760px) {
+    body {
+        font-size: 15px;
+    }
+
+    .site-header {
+        position: relative;
+    }
+
+    .nav-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .brand {
+        justify-self: start;
+    }
+
+    .header-actions {
+        margin-left: 0;
+    }
+
+    .nav-cta {
+        width: 100%;
+    }
+
+    .main-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        width: 100%;
+        padding: 0.45rem 0 0.2rem;
+    }
+
+    .main-nav a {
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 74vh;
+    }
+
+    .hero-content {
+        padding: 4.5rem 0 3rem;
+    }
+
+    .hero-note {
+        position: static;
+        width: fit-content;
+        margin: 0 4% 2rem auto;
+    }
+
+    .value-grid,
+    .sustain-points,
+    .testimonial-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .field.full {
+        grid-column: auto;
+    }
+
+    .gallery-grid,
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        min-height: auto;
+    }
+
+    .feature img {
+        min-height: 16rem;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINT 3
+   SMALL MOBILE
+   ========================= */
+@media (max-width: 520px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: clamp(2.7rem, 16vw, 4.7rem);
+    }
+
+    h2 {
+        font-size: clamp(2rem, 11vw, 3.1rem);
+    }
+
+    .main-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item,
+    .gallery-item.large {
+        min-height: 13rem;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
