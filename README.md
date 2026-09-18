@@ -42,5 +42,3 @@ The HTML uses picture, srcset and sizes. The CSS uses max-width, object-fit and 
 ## GitHub
 Use several descriptive commits during the real development process. The commit plan is in docs/GITHUB_COMMIT_PLAN.md.
 
-## Part 1 feedback
-The exact lecturer feedback was not supplied with the project files used for this build. Do not invent feedback. Add the actual feedback and the matching Part 2 changes to CHANGELOG.md before final submission.
