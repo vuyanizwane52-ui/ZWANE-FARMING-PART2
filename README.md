@@ -29,7 +29,6 @@ Visible CSS examples include:
 - Three responsive media-query breakpoints
 - Responsive navigation, layout, typography and images
 
-No JavaScript is used in Part 2.
 
 ## Responsive breakpoints
 980px, tablet and small desktop adjustments
